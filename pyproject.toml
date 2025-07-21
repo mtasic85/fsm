@@ -1,0 +1,19 @@
+[project]
+name = "fsm"
+version = "0.1.0"
+description = "Finite-state machine in Python"
+readme = "README.md"
+authors = [
+    { name = "Marko Tasic", email = "mtasic85@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pyright>=1.1.403",
+]
+
+[project.scripts]
+fsm = "fsm:main"
+
+[build-system]
+requires = ["uv_build>=0.8.0,<0.9"]
+build-backend = "uv_build"
